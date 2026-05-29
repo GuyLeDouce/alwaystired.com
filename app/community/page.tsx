@@ -38,7 +38,7 @@ const holderActions = [
   },
   {
     title: "Community Stewardship",
-    body: "Guy holds the operational keys, but the project direction belongs to the SleepyHeads.",
+    body: "The donation wallet, contract/deployer access, Discord, website, and X account are in community hands.",
   },
   {
     title: "Other Ways to Support",
@@ -96,18 +96,24 @@ export default function CommunityPage() {
 
             <div className="copy-panel reveal">
               <p className="eyebrow">Community stewardship</p>
-              <h2 className="section-title">Guy holds the keys. The community holds the direction.</h2>
+              <h2 className="section-title">The community holds the keys now.</h2>
               <p>
-                Guy LeDouce now holds the operational keys needed to keep Always
-                Tired moving, including the donation wallet, contract/deployer
-                access, Discord, website, and X account.
+                Always Tired was never gone. It was carried by the SleepyHeads
+                who kept showing up when there was no spotlight, no clear
+                direction, and no guarantee that anything would change.
               </p>
               <p>
-                But this is not a one-person project and Guy is not being framed
-                as a new founder. The direction belongs to the SleepyHeads.
+                Now the project finally has the access and transparency it
+                needed.
               </p>
+              <p>
+                The donation wallet, contract/deployer access, Discord, website,
+                and X account are in community hands.
+              </p>
+              <p>This is not a new founder era.</p>
               <p className="statement">
-                1 collection. 7,777 tokens. 7,777 pieces of the community voice.
+                This is the SleepyHeads taking care of what they refused to let
+                disappear.
               </p>
             </div>
           </div>

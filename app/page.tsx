@@ -92,7 +92,7 @@ export default function Home() {
                 never left.
               </p>
               <p className="statement">
-                Guy holds the keys. The community holds the direction.
+                The community holds the keys now.
               </p>
             </div>
           </div>

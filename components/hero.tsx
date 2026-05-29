@@ -53,7 +53,7 @@ export function Hero() {
           </div>
         </div>
         <p className="fine-print">
-          Guy holds the keys. The community holds the direction.
+          The community holds the keys now.
         </p>
         <div className="actions">
           <ButtonLink className="primary" href="/mission">
