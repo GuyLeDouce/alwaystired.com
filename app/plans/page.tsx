@@ -63,18 +63,54 @@ const awarenessTools = [
 ];
 
 const possibleDirections = [
-  "Holder voting portal",
-  "Donation nomination forms",
-  "Verified ambassador roles",
-  "$COFFEE recognition for awareness participation",
-  "ME/CFS resource hub",
-  "Community art campaigns",
-  "Monthly awareness pushes",
-  "Advocacy group conversations",
-  "Research spotlight posts",
-  "Transparent donation reports",
-  "Collector recognition tied to participation",
-  "Trait-based community events",
+  {
+    title: "Holder voting portal",
+    body: "A future holder-only space where SleepyHeads could vote on donation destinations, major community decisions, and the direction of Always Tired.",
+  },
+  {
+    title: "Donation nomination forms",
+    body: "A simple way for holders and supporters to suggest credible ME/CFS organizations, research efforts, advocacy groups, or support initiatives for the community to review.",
+  },
+  {
+    title: "Verified ambassador roles",
+    body: "Optional Discord or website roles for SleepyHeads who help share ME/CFS resources, support awareness pushes, and represent the project respectfully.",
+  },
+  {
+    title: "$COFFEE recognition for awareness participation",
+    body: "A possible way to recognize people who help with awareness efforts, while keeping $COFFEE off-chain, non-financial, and free from fake value promises.",
+  },
+  {
+    title: "ME/CFS resource hub",
+    body: "A dedicated place for trusted ME/CFS links, beginner-friendly explanations, research resources, and community-submitted educational material.",
+  },
+  {
+    title: "Community art campaigns",
+    body: "Awareness-focused art pushes using Always Tired characters to help tell stories around exhaustion, invisible illness, resilience, and support.",
+  },
+  {
+    title: "Monthly awareness pushes",
+    body: "Coordinated community moments where SleepyHeads share ME/CFS facts, personal reflections, resources, donation updates, or campaign posts.",
+  },
+  {
+    title: "Advocacy group conversations",
+    body: "Open discussions with credible ME/CFS groups to learn where support may be useful and whether crypto donations can be accepted responsibly.",
+  },
+  {
+    title: "Research spotlight posts",
+    body: "Short, readable posts that highlight ME/CFS research, patient stories, symptoms, misconceptions, and useful resources without pretending to be medical advice.",
+  },
+  {
+    title: "Transparent donation reports",
+    body: "Public updates showing wallet progress, nominations, votes, final donation decisions, transaction proof, and what the community learns after funds are sent.",
+  },
+  {
+    title: "Collector recognition tied to participation",
+    body: "Simple ways to recognize holders who consistently show up, share resources, donate prizes, help with events, or support the mission.",
+  },
+  {
+    title: "Trait-based community events",
+    body: "Fun collection-based events around specific traits or characters, without turning traits into investment hype or floor-price talk.",
+  },
 ];
 
 export default function PlansPage() {
@@ -236,19 +272,18 @@ export default function PlansPage() {
         <div className="container">
           <div className="section-head reveal">
             <p className="eyebrow">Possible directions</p>
-            <h2 className="section-title">What could be possible.</h2>
+            <h2 className="section-title">What We&apos;re Exploring</h2>
             <p className="section-lede">
-              These are possible directions, not confirmed promises.
+              These are possible directions for Always Tired, not confirmed
+              promises. Each idea needs community feedback, careful planning,
+              and clear communication before anything becomes real.
             </p>
           </div>
           <div className="grid three">
             {possibleDirections.map((item) => (
-              <div className="card reveal" key={item}>
-                <h3>{item}</h3>
-                <p>
-                  A possible future direction that would need community feedback,
-                  careful design, and clear communication before becoming real.
-                </p>
+              <div className="card reveal" key={item.title}>
+                <h3>{item.title}</h3>
+                <p>{item.body}</p>
               </div>
             ))}
           </div>
