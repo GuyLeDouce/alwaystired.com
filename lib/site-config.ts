@@ -5,6 +5,7 @@ export const siteConfig = {
   links: {
     discord: "https://discord.gg/xheBXt48pR",
     openSea: "https://opensea.io/collection/always-tired-official",
+    traitOffers: "https://opensea.io/collection/always-tired-official/offers",
     x: "https://x.com/alwaystirednfts",
     etherscanContract:
       "https://etherscan.io/address/0x3ccbd9c381742c04d81332b5db461951672f6a99",
@@ -16,9 +17,9 @@ export const siteConfig = {
       "0xce2b924F55470381E072a6379D46f89093B7f7Ea",
     donationGoalUsd: 5000,
     etherscanBaseUrl: "https://etherscan.io",
-    donationTitle: "A Public Wallet For Real-World Support",
+    donationTitle: "A Public Wallet For Real Support",
     donationDescription:
-      "Always Tired NFTs is opening a transparent ETH donation wallet with a goal of reaching $5,000 USD worth of ETH. Once the goal is reached, Always Tired NFT holders will vote on where the donation should be distributed.",
+      "Always Tired NFTs is building a transparent ETH donation effort where holders help source, discuss, and vote on the best places to support ME/CFS awareness, research, advocacy, and patient-centered work.",
   },
 };
 

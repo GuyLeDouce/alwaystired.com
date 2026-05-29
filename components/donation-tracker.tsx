@@ -95,9 +95,9 @@ export function DonationTracker({ compact = false }: { compact?: boolean }) {
           <h2 className="section-title">{siteConfig.donation.donationTitle}</h2>
           <p className="section-lede">{siteConfig.donation.donationDescription}</p>
           <p className="section-lede">
-            Once the goal is reached, Always Tired NFT holders will vote on where
-            the donation should be distributed. The voting result and final
-            donation destination will be made publicly visible.
+            Holders can help source trusted donation destinations, discuss the
+            options, vote on where support should go, and keep the final result
+            visible.
           </p>
           {!compact && (
             <div className="grid two">
@@ -109,10 +109,11 @@ export function DonationTracker({ compact = false }: { compact?: boolean }) {
                 </p>
               </div>
               <div className="vote-card">
-                <h3>No hidden custody</h3>
+                <h3>Careful by design</h3>
                 <p>
                   This site never connects to wallets or takes custody. Donations
-                  are sent directly by the donor from their own Ethereum wallet.
+                  are sent directly by the donor from their own Ethereum wallet,
+                  and each donor is responsible for their own decision.
                 </p>
               </div>
             </div>

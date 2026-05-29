@@ -14,18 +14,25 @@ export function Hero() {
         <p className="eyebrow">Community-led revival era</p>
         <h1>The Tired Still Remain.</h1>
         <p className="lede">
-          Always Tired NFTs are waking back up — not with fake hype, but with
-          community, transparency, and a real reason to keep building.
+          Always Tired NFTs is a community-led revival built around ME/CFS
+          awareness, holder participation, transparent donations, and the belief
+          that tired does not mean finished.
+        </p>
+        <p className="lede">
+          This project began as a collection of 7,777 exhausted little
+          characters. Today, it is becoming something more useful: a public home
+          for awareness, action, and community-driven support.
         </p>
         <div className="actions">
-          <ButtonLink className="primary" href="/discord">
-            Join the Discord
+          <ButtonLink className="primary" href="/collection">
+            Explore the Collection
           </ButtonLink>
-          <ButtonLink external href={siteConfig.links.openSea}>
-            View on OpenSea
+          <ButtonLink external href={siteConfig.links.traitOffers}>
+            View Trait Offers
           </ButtonLink>
-          <ButtonLink className="coffee" external href={siteConfig.links.x}>
-            Follow on X
+          <ButtonLink href="/discord">Join the Community</ButtonLink>
+          <ButtonLink className="coffee" href="/donate">
+            Donate ETH
           </ButtonLink>
         </div>
       </div>

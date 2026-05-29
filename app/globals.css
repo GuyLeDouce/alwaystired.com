@@ -440,6 +440,15 @@ h3 {
   gap: 1rem;
 }
 
+.stack {
+  display: grid;
+  gap: 1rem;
+}
+
+.spaced {
+  margin-top: 1rem;
+}
+
 .grid.two {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -477,6 +486,43 @@ h3 {
 .timeline h3 {
   color: var(--cream);
   font-size: 1.35rem;
+}
+
+.statement {
+  color: var(--cream) !important;
+  font-size: clamp(1.2rem, 2.2vw, 1.8rem);
+  font-weight: 950;
+}
+
+.feature-list {
+  display: grid;
+  gap: 0.7rem;
+  margin: 0 0 1.15rem;
+  padding: 0;
+  color: var(--muted);
+  line-height: 1.65;
+  list-style: none;
+}
+
+.feature-list.compact {
+  gap: 0.45rem;
+}
+
+.feature-list li {
+  position: relative;
+  padding-left: 1.35rem;
+}
+
+.feature-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.72em;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--green);
+  box-shadow: 0 0 14px rgba(136, 214, 195, 0.44);
 }
 
 .kicker {
