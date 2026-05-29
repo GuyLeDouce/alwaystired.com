@@ -1,0 +1,25 @@
+{
+  "name": "always-tired-nfts-site",
+  "version": "3.0.0",
+  "private": true,
+  "scripts": {
+    "build:collection": "node scripts/build-collection-data.mjs",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "next": "16.2.6",
+    "react": "19.2.6",
+    "react-dom": "19.2.6"
+  },
+  "devDependencies": {
+    "@types/node": "25.0.3",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
+    "eslint": "9.39.2",
+    "eslint-config-next": "16.2.6",
+    "typescript": "5.9.3"
+  }
+}
