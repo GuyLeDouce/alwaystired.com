@@ -43,14 +43,6 @@ export function Hero() {
             <strong>ME/CFS</strong>
             <span>Awareness</span>
           </div>
-          <div>
-            <strong>SleepyHead</strong>
-            <span>Stewardship</span>
-          </div>
-          <div>
-            <strong>Public</strong>
-            <span>Donation Wallet</span>
-          </div>
         </div>
         <p className="fine-print">
           The community holds the keys now.

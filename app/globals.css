@@ -428,9 +428,9 @@ h3 {
 
 .stat-strip.inline-stats {
   position: static;
-  max-width: 780px;
-  margin: 2rem 0 0;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  width: min(100%, 620px);
+  margin: 2rem auto 0;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .section {
@@ -455,6 +455,11 @@ h3 {
 .compact-stack {
   gap: 0.35rem;
   margin: 1.2rem 0;
+}
+
+.hero .actions {
+  max-width: 720px;
+  gap: 0.7rem;
 }
 
 .spaced {
@@ -498,6 +503,13 @@ h3 {
 .timeline h3 {
   color: var(--cream);
   font-size: 1.35rem;
+}
+
+.copy-panel a:not(.button) {
+  color: var(--green);
+  font-weight: 900;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
 }
 
 .statement {

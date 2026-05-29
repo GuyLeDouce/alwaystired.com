@@ -77,9 +77,15 @@ export default function Home() {
             </div>
             <div className="copy-panel reveal">
               <p>
-                Guy LeDouce, @GuyLeDouceNFT, was one of those holders. He
-                stayed, helped where he could, and kept believing the project
-                still had something worth saving.
+                <a
+                  href="https://x.com/GuyLeDouceNFT"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Guy LeDouce
+                </a>{" "}
+                was one of those holders. He stayed, helped where he could, and
+                kept believing the project still had something worth saving.
               </p>
               <p>
                 Now the operational keys have finally been released to Guy: the
