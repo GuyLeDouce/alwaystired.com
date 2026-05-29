@@ -5,41 +5,50 @@ import { siteConfig } from "@/lib/site-config";
 export const metadata = {
   title: "Plans",
   description:
-    "The Always Tired NFTs vision: completed foundations, ME/CFS awareness, $COFFEE future utility, holder voting, and transparent community action.",
+    "Visible next steps for Always Tired NFTs: website polish, collection viewer, Trait Offers, donation transparency, ME/CFS resources, $COFFEE review, and community accountability.",
 };
 
-const foundations = [
+const nextSteps = [
   {
-    title: "Website completed",
-    body: "The project now has a central public hub for collection browsing, donation tracking, mission information, links, and updates.",
+    title: "Website Polish",
+    body: "Keep improving the website as the home base for the collection, ME/CFS resources, donation tracking, project links, and community information.",
   },
   {
-    title: "Trait Offers completed",
-    body: "Trait Offers are live, helping bring new marketplace activity and collector focus to the collection.",
+    title: "Collection Viewer",
+    body: "Preserve and improve the collection browsing experience so people can explore tokens, traits, and the full Always Tired collection.",
   },
   {
-    title: "Donation structure started",
-    body: "A public wallet gives the community a transparent place to begin building support.",
+    title: "Trait Offers",
+    body: "Trait Offers are already complete and can continue helping collectors interact with the collection in a cleaner way.",
   },
   {
-    title: "ME/CFS mission clarified",
-    body: "The project now has a clear awareness direction and a reason to exist beyond collection nostalgia.",
+    title: "Donation Transparency",
+    body: "Track the public wallet, show donation progress clearly, explain where funds may go, and post proof when funds are distributed.",
   },
   {
-    title: "Holder role defined",
-    body: "Always Tired holders are being positioned as ambassadors, voters, researchers, contributors, and supporters.",
+    title: "Holder Voting",
+    body: "Build a holder-only website section in the future so SleepyHeads can vote on donation destinations and major community decisions.",
   },
-];
-
-const coffeeDirections = [
-  "Rewards for awareness posts",
-  "Recognition for holders who help source donation destinations",
-  "Creator rewards for ME/CFS awareness content",
-  "Participation rewards for Discord events",
-  "Voting or reputation layers",
-  "Community challenges",
-  "Campaign-based incentives",
-  "Integration with holder activity",
+  {
+    title: "ME/CFS Resources",
+    body: "Add better educational resources and make the site a useful starting point for learning about ME/CFS.",
+  },
+  {
+    title: "Stories From The Tired",
+    body: "Create a respectful place for real stories from people living with ME/CFS, loved ones, caregivers, and SleepyHeads who want to share.",
+  },
+  {
+    title: "$COFFEE Review",
+    body: "Review the role of $COFFEE carefully so it can serve the community better without fake promises or forced mechanics.",
+  },
+  {
+    title: "Community Events",
+    body: "Continue the games, raffles, poker, and Discord activity that helped keep Always Tired alive.",
+  },
+  {
+    title: "Public Accountability",
+    body: "Keep decisions, funds, and direction as visible as possible.",
+  },
 ];
 
 const awarenessTools = [
@@ -57,14 +66,14 @@ const possibleDirections = [
   "Holder voting portal",
   "Donation nomination forms",
   "Verified ambassador roles",
-  "$COFFEE rewards for awareness participation",
+  "$COFFEE recognition for awareness participation",
   "ME/CFS resource hub",
   "Community art campaigns",
   "Monthly awareness pushes",
-  "Partnerships with advocacy groups",
+  "Advocacy group conversations",
   "Research spotlight posts",
   "Transparent donation reports",
-  "Collector incentives tied to participation",
+  "Collector recognition tied to participation",
   "Trait-based community events",
 ];
 
@@ -72,15 +81,15 @@ export default function PlansPage() {
   return (
     <>
       <section className="page-hero reveal">
-        <p className="eyebrow">Vision</p>
-        <h1>The foundation is complete. Now the vision expands.</h1>
+        <p className="eyebrow">Visible next steps</p>
+        <h1>What we&apos;re working on.</h1>
         <p>
-          The website is live. The collection viewer is finished. Trait Offers
-          are active. The donation wallet is public.
+          This is not a list of hype promises. It is a visible look at what the
+          SleepyHeads are improving, discussing, and building toward.
         </p>
         <p>
-          The next phase is about participation, awareness, $COFFEE utility, and
-          transparent community action.
+          No fake deadlines. No pretending Web3 is easy. Just the work in front
+          of us.
         </p>
       </section>
 
@@ -91,11 +100,15 @@ export default function PlansPage() {
           </div>
           <div>
             <div className="section-head reveal">
-              <p className="eyebrow">Completed foundations</p>
-              <h2 className="section-title">Completed foundations. Clearer direction.</h2>
+              <p className="eyebrow">Built and active</p>
+              <h2 className="section-title">The foundation is real.</h2>
+              <p className="section-lede">
+                The website is live. The collection viewer is finished. Trait
+                Offers are active. The donation wallet is public.
+              </p>
             </div>
             <div className="grid two">
-              {foundations.map((item) => (
+              {nextSteps.map((item) => (
                 <div className="card reveal" key={item.title}>
                   <h3>{item.title}</h3>
                   <p>{item.body}</p>
@@ -110,8 +123,8 @@ export default function PlansPage() {
         <div className="container">
           <div className="grid two">
             <div className="copy-panel reveal">
-              <p className="eyebrow">Next phase</p>
-              <h2 className="section-title">From revival to movement.</h2>
+              <p className="eyebrow">Community takeover</p>
+              <h2 className="section-title">From stewardship to movement.</h2>
             </div>
             <div className="copy-panel reveal">
               <p>
@@ -120,15 +133,14 @@ export default function PlansPage() {
               </p>
               <p>
                 That can include awareness events, donation drives, holder
-                votes, creator campaigns, educational posts, $COFFEE incentives,
-                Discord tools, and better ways to recognize people helping the
-                mission.
+                votes, creator campaigns, educational posts, Discord tools, and
+                better ways to recognize people helping the mission.
               </p>
               <p>
                 This should be built carefully. Some ideas will work. Some will
                 change. Some will need holder feedback before they become real.
               </p>
-              <p>The goal is not to overpromise. The goal is to move with purpose.</p>
+              <p>No empty promises. No fake hype. Just transparency, awareness, and community.</p>
             </div>
           </div>
         </div>
@@ -137,28 +149,32 @@ export default function PlansPage() {
       <section className="section">
         <div className="container">
           <div className="section-head reveal">
-            <p className="eyebrow">$COFFEE future utility</p>
-            <h2 className="section-title">$COFFEE should become part of the mission.</h2>
+            <p className="eyebrow">The Coffee Is Still Brewing</p>
+            <h2 className="section-title">$COFFEE is under review.</h2>
             <p className="section-lede">
-              $COFFEE already exists in the Always Tired ecosystem, but its
-              future role should become more meaningful than raffles alone.
+              $COFFEE has always been part of the SleepyHead experience, but it
+              needs to be reviewed carefully as the community takeover continues.
             </p>
           </div>
           <div className="copy-panel reveal">
             <p>
-              The vision is to explore how $COFFEE can support participation,
-              awareness, contribution, and community activity.
+              $COFFEE is an off-chain Discord token tied to DRIP. It is earned
+              passively by holding Always Tired NFTs, claimed by holders, earned
+              through ME/CFS Warriors games in Discord, earned through ClubGG
+              poker and top 5 poker placements, and used mainly to buy raffle
+              tickets for monthly NFT prizes.
             </p>
-            <ul className="feature-list">
-              {coffeeDirections.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
             <p>
-              Nothing is final yet, and more details will come later. But the
-              direction is clear: $COFFEE should help power the people doing the
-              work.
+              It is not money. It is not on-chain. It is not an investment. It
+              has no monetary value.
             </p>
+            <p>
+              Something needs to change, but that does not mean forced
+              mechanics, financial promises, or fake value. It means taking time
+              to ask what role $COFFEE should actually play for a community
+              built around awareness, games, collecting, and participation.
+            </p>
+            <p className="statement">No promises yet. The coffee is still brewing.</p>
           </div>
         </div>
       </section>
@@ -167,15 +183,15 @@ export default function PlansPage() {
         <div className="container">
           <div className="grid two">
             <div className="copy-panel reveal">
-              <p className="eyebrow">Holder-led support</p>
+              <p className="eyebrow">Holder-guided support</p>
               <h2 className="section-title">Holders help decide where support goes.</h2>
             </div>
             <div className="copy-panel reveal">
               <p>
                 Always Tired should not randomly pick donation destinations
-                behind closed doors.
+                behind closed doors. The better model is holder-led sourcing and
+                voting.
               </p>
-              <p>The better model is holder-led sourcing and voting.</p>
               <p>
                 The community can suggest possible organizations, research
                 facilities, advocacy groups, and support initiatives. Those
@@ -221,7 +237,7 @@ export default function PlansPage() {
             <p className="eyebrow">Possible directions</p>
             <h2 className="section-title">What could be possible.</h2>
             <p className="section-lede">
-              These are possible directions, not guaranteed promises.
+              These are possible directions, not confirmed promises.
             </p>
           </div>
           <div className="grid three">
@@ -239,7 +255,7 @@ export default function PlansPage() {
       </section>
 
       <section className="final-cta reveal">
-        <p className="eyebrow">The tired still remain</p>
+        <p className="eyebrow">The Tired Still Remain</p>
         <h2>This is how the tired wake up.</h2>
         <p className="section-lede">
           Always Tired does not need fake hype. It needs clear purpose, visible
@@ -249,7 +265,7 @@ export default function PlansPage() {
         <p className="section-lede">The foundation is built. Now the mission can grow.</p>
         <div className="actions">
           <ButtonLink className="primary" href="/discord">
-            Join the Discord
+            Join Discord
           </ButtonLink>
           <ButtonLink external href={siteConfig.links.traitOffers}>
             View Trait Offers

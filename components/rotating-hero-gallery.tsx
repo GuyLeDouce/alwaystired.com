@@ -45,7 +45,7 @@ export function RotatingHeroGallery() {
           className={["feature-card", index === 0 ? "big" : `small-${["a", "b", "c"][index - 1]}`].join(" ")}
           href={siteConfig.links.openSea}
           key={`${nft.id}-${index}`}
-          rel="noreferrer"
+          rel="noopener noreferrer"
           target="_blank"
         >
           <NftImage

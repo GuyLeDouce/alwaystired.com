@@ -73,7 +73,7 @@ export function NftGallery() {
             className="nft-tile"
             href={siteConfig.links.openSea}
             key={`${nft.id}-${offset}`}
-            rel="noreferrer"
+            rel="noopener noreferrer"
             target="_blank"
           >
             <NftImage

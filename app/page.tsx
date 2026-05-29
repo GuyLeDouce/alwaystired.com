@@ -2,37 +2,50 @@ import { ButtonLink } from "@/components/button-link";
 import { Hero } from "@/components/hero";
 import { siteConfig } from "@/lib/site-config";
 
-const foundationCards = [
+const sleepyHeadCards = [
   {
-    title: "Website completed",
-    body: "The new Always Tired NFTs website is live as the official home for the community revival, collection information, donation tracking, awareness direction, and verified links.",
+    title: "Learn",
+    body: "Read and share credible ME/CFS information before speaking for the mission.",
   },
   {
-    title: "Collection viewer completed",
-    body: "The full collection viewer makes it easier to browse the 7,777 NFTs, search traits, and reconnect with the art.",
+    title: "Share",
+    body: "Help keep awareness visible across social platforms and communities.",
   },
   {
-    title: "Trait Offers completed",
-    body: "Trait Offers are now active, helping bring more collector movement, targeted buying, and marketplace activity back to the collection.",
+    title: "Support",
+    body: "Suggest credible donation destinations, resources, or awareness opportunities.",
   },
   {
-    title: "Donation wallet live",
-    body: "The public donation wallet gives the community a transparent way to track funds and build toward meaningful support.",
+    title: "Play",
+    body: "Join community games, raffles, poker, and events that keep the SleepyHeads active.",
   },
   {
-    title: "Community direction established",
-    body: "The project now has a clearer purpose: ME/CFS awareness, holder-led decisions, transparent donation sourcing, and a stronger role for the existing ecosystem.",
+    title: "Vote",
+    body: "Holders will help decide where donation funds go once the holder voting system is ready.",
+  },
+  {
+    title: "Stay",
+    body: "Keep showing up, even when things move slowly.",
   },
 ];
 
-const awarenessGoals = [
-  "Turning holders into ME/CFS awareness ambassadors.",
-  "Using the website as a hub for education, updates, donation tracking, and community decisions.",
-  "Helping the community research and suggest the best places to donate.",
-  "Creating transparent votes so holders help decide where support goes.",
-  "Using $COFFEE for more than raffles.",
-  "Building simple tools, campaigns, and incentives that reward awareness, participation, and contribution.",
-  "Creating an ecosystem where the collection has culture, purpose, and movement again.",
+const realFeatures = [
+  {
+    title: "Collection viewer",
+    body: "Browse the full 7,777 token collection, search traits, and reconnect with the tired faces that started it all.",
+  },
+  {
+    title: "Trait Offers",
+    body: "Trait Offers are live, giving collectors a cleaner way to interact with the collection without market hype.",
+  },
+  {
+    title: "Donation tracking",
+    body: "The public wallet, ETH balance, approximate USD value, and first visible goal are displayed openly.",
+  },
+  {
+    title: "Official links",
+    body: "The site now keeps collection, Discord, X, OpenSea, contract, donation wallet, and ME/CFS resource links in one place.",
+  },
 ];
 
 export default function Home() {
@@ -43,33 +56,43 @@ export default function Home() {
       <section className="section">
         <div className="container">
           <div className="section-head reveal">
-            <p className="eyebrow">Community-led revival</p>
-            <h2 className="section-title">Not just a comeback. A new purpose.</h2>
+            <p className="eyebrow">Project story</p>
+            <h2 className="section-title">Always Tired never left.</h2>
           </div>
           <div className="grid two">
             <div className="copy-panel reveal">
+              <p>Always Tired was not abandoned by the SleepyHeads.</p>
               <p>
-                Always Tired NFTs is entering a new chapter with more clarity
-                than ever before.
+                The original founder, Simon / Sethi1337, stepped away. From the
+                outside, the project looked stagnant. But inside the community,
+                people kept it alive.
               </p>
-              <p>
-                This is not about pretending the project was always active. It
-                was not. This is not about promising a giant roadmap to create
-                hype. It does not need that either.
-              </p>
+              <ul className="feature-list compact">
+                <li>Games continued.</li>
+                <li>Events continued.</li>
+                <li>$COFFEE raffles continued.</li>
+                <li>NFT donations kept prize pools moving.</li>
+                <li>Mods and active holders kept showing up when there was no promise it would ever matter.</li>
+              </ul>
             </div>
             <div className="copy-panel reveal">
               <p>
-                This is about taking what already exists: the art, the holders,
-                the community, the $COFFEE token, the website, the public
-                donation wallet, Trait Offers, and the attention around the
-                project, and aiming it toward something that matters.
+                Guy LeDouce was one of those holders. He stayed, helped where he
+                could, and kept believing the project still had something worth
+                saving.
               </p>
               <p>
-                Always Tired is now being shaped into a holder-led awareness
-                ecosystem where collectors are not just passive owners. They are
-                potential advocates, fundraisers, educators, voters, and
-                ambassadors for ME/CFS awareness.
+                Now the operational keys have finally been released to Guy: the
+                donation wallet, contract/deployer access, Discord, website, and
+                social accounts.
+              </p>
+              <p>This is not Guy taking over as a founder.</p>
+              <p>
+                This is the SleepyHeads taking stewardship of the project they
+                never left.
+              </p>
+              <p className="statement">
+                Guy holds the keys. The community holds the direction.
               </p>
             </div>
           </div>
@@ -79,36 +102,87 @@ export default function Home() {
       <section className="section">
         <div className="container">
           <div className="section-head reveal">
-            <p className="eyebrow">ME/CFS awareness</p>
+            <p className="eyebrow">The story behind the tired</p>
+            <h2 className="section-title">Why ME/CFS was always the mission.</h2>
+          </div>
+          <div className="copy-panel reveal">
+            <p>
+              Always Tired was never just a collection of exhausted characters.
+              The art was created by Frederik, a hardworking engineer who loved
+              being active. He played sports, ran, and especially loved tennis.
+            </p>
+            <p>
+              In early 2020, Frederik was diagnosed with ME/CFS. His life
+              changed quickly. Within weeks, he lost his job. Soon after, he
+              lost the energy to play tennis, run, or take part in the sports
+              that had been such a big part of his life.
+            </p>
+            <p>
+              Then even going outside became difficult. Then getting out of bed
+              became a task. Frederik eventually received help and was placed in
+              an institution where he could receive care. During that time, he
+              was put in a wheelchair.
+            </p>
+            <p>
+              The last word shared from him was that things were still extremely
+              difficult. There was still no clear path to healing, no cure, and
+              no simple treatment for what he was suffering through.
+            </p>
+            <p>
+              That story is the foundation of Always Tired. ME/CFS awareness was
+              never a trend added later. It was always the heart of the project.
+            </p>
+            <p>
+              The mission was supposed to be awareness, support, and donation.
+              That mission was not followed through the way it should have been
+              before. Now the SleepyHeads are trying to do it properly.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <div className="section-head reveal">
+            <p className="eyebrow">Built for the tired</p>
             <h2 className="section-title">
-              Because &quot;tired&quot; does not begin to explain it.
+              ME/CFS awareness is not a side mission.
             </h2>
+            <p className="section-lede">
+              It is the reason Always Tired exists.
+            </p>
           </div>
           <div className="grid two">
             <div className="copy-panel reveal">
               <p>
-                ME/CFS, short for Myalgic Encephalomyelitis/Chronic Fatigue
-                Syndrome, is a serious, chronic, complex illness that can deeply
-                affect a person&apos;s ability to function.
+                ME/CFS, also known as Myalgic Encephalomyelitis / Chronic
+                Fatigue Syndrome, is a serious, chronic, complex illness that
+                can affect the nervous system, immune system, autonomic system,
+                sleep, cognition, and the body&apos;s ability to recover after
+                exertion.
               </p>
               <p>
-                One of the defining symptoms is post-exertional malaise, often
-                called PEM. This means symptoms can worsen after physical,
-                mental, emotional, or social effort that may have been
-                manageable before illness. For many people, the crash can last
-                for days or weeks.
+                For many people, it is not &quot;just being tired.&quot; It can
+                mean waking up exhausted, crashing after basic activity,
+                struggling with brain fog, pain, dizziness, unrefreshing sleep,
+                light and sound sensitivity, and losing access to the life they
+                used to know.
               </p>
             </div>
             <div className="copy-panel reveal">
+              <p>Always Tired NFTs cannot treat ME/CFS.</p>
+              <p>A website cannot cure anyone.</p>
+              <p>A community cannot replace doctors, research, or care.</p>
               <p>
-                ME/CFS is not laziness. It is not normal tiredness. It is not
-                something people can simply push through.
+                But a community can help keep the conversation visible. We can
+                share credible resources. We can support awareness. We can raise
+                funds transparently. We can help more people understand that
+                this illness is real, serious, and too often dismissed.
               </p>
-              <p>
-                And that is why this project matters. Always Tired can use its
-                name, art, humour, and Web3 culture to start better
-                conversations about an illness that is still widely
-                misunderstood.
+              <p className="fine-print">
+                Always Tired NFTs is a community-led awareness project. We are
+                not a medical organization, and this website does not provide
+                medical advice, diagnosis, or treatment.
               </p>
             </div>
           </div>
@@ -118,39 +192,30 @@ export default function Home() {
       <section className="section">
         <div className="container">
           <div className="section-head reveal">
-            <p className="eyebrow">Holder ambassadors</p>
-            <h2 className="section-title">Holders as ambassadors.</h2>
+            <p className="eyebrow">SleepyHeads</p>
+            <h2 className="section-title">The SleepyHeads kept showing up.</h2>
             <p className="section-lede">
-              Always Tired NFT holders are not just collectors in this new
-              chapter. They are the people who can help carry the message.
+              The SleepyHeads are the reason Always Tired still exists.
             </p>
           </div>
           <div className="copy-panel reveal">
             <p>
-              The vision is to turn the holder base into a loose but active
-              network of ME/CFS awareness ambassadors. That can mean sharing
-              educational posts, helping source trusted donation destinations,
-              participating in holder votes, suggesting research organizations,
-              creating awareness art, supporting campaigns, or simply helping
-              more people understand that ME/CFS is real.
+              Some are collectors. Some care deeply about ME/CFS. Some are here
+              for the art, games, raffles, dark humour, and weird little
+              community moments. Most are probably some mix of all of it.
             </p>
             <p>
-              No one is expected to become a medical expert. No one is expected
-              to speak over patients, caregivers, doctors, or researchers.
+              Holding an Always Tired NFT gives you a voice in the community. It
+              does not make you a doctor. It does not make you an expert. It
+              does not make you better than anyone else who cares.
             </p>
-            <p className="statement">Listen. Learn. Share. Support. Vote. Build.</p>
+            <p>
+              You do not need to own an NFT to learn, donate, care, or join the
+              conversation. But holders will guide the official votes.
+            </p>
           </div>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container">
-          <div className="section-head reveal">
-            <p className="eyebrow">Already live</p>
-            <h2 className="section-title">The foundation is already live.</h2>
-          </div>
-          <div className="grid three">
-            {foundationCards.map((card) => (
+          <div className="grid three spaced">
+            {sleepyHeadCards.map((card) => (
               <div className="card reveal" key={card.title}>
                 <h3>{card.title}</h3>
                 <p>{card.body}</p>
@@ -162,74 +227,81 @@ export default function Home() {
 
       <section className="section">
         <div className="container">
-          <div className="section-head reveal">
-            <p className="eyebrow">Active awareness</p>
-            <h2 className="section-title">From tired art to active awareness.</h2>
-            <p className="section-lede">
-              The long-term vision is to make Always Tired NFTs a small but
-              meaningful awareness engine.
-            </p>
-          </div>
-          <div className="copy-panel reveal">
-            <ul className="feature-list">
-              {awarenessGoals.map((goal) => (
-                <li key={goal}>{goal}</li>
-              ))}
-            </ul>
-            <p>
-              This will not happen all at once. It should not be rushed or
-              overpromised. But the path is now clearer than it has been in a
-              long time.
-            </p>
+          <div className="grid two">
+            <div className="copy-panel reveal">
+              <p className="eyebrow">Royalties and transparency</p>
+              <h2 className="section-title">
+                Activity can finally support the mission transparently.
+              </h2>
+            </div>
+            <div className="copy-panel reveal">
+              <p>
+                For a long time, Always Tired stayed alive mostly through the
+                people who refused to leave. The community kept playing,
+                donating prizes, running raffles, and showing up, but the
+                collection was not being pushed publicly because royalties were
+                not flowing where they should have.
+              </p>
+              <p>
+                Now that the keys have been released and royalties can point
+                toward the public donation wallet, activity around the
+                collection can finally support the mission transparently.
+              </p>
+              <p>
+                Depending on how a sale is listed and whether royalties are
+                honoured by the marketplace, up to 10% can flow directly to the
+                public donation wallet.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       <section className="section">
         <div className="container">
-          <div className="grid two">
-            <div className="copy-panel reveal">
-              <p className="eyebrow">$COFFEE future utility</p>
-              <h2 className="section-title">$COFFEE should mean more.</h2>
-            </div>
-            <div className="copy-panel reveal">
-              <p>
-                Always Tired already has $COFFEE, but the vision is to make it
-                more important inside the ecosystem than just a token used for
-                raffles.
-              </p>
-              <p>
-                $COFFEE has the potential to become a community participation
-                layer connected to awareness actions, holder activity, creator
-                contributions, donation campaigns, event participation, and
-                future utility.
-              </p>
-              <p>
-                More details will come later, but the direction is simple:
-                $COFFEE should reward the people helping keep the project awake.
-              </p>
-            </div>
+          <div className="section-head reveal">
+            <p className="eyebrow">Real now</p>
+            <h2 className="section-title">Build what is real now.</h2>
+          </div>
+          <div className="grid four">
+            {realFeatures.map((item) => (
+              <div className="card reveal" key={item.title}>
+                <h3>{item.title}</h3>
+                <p>{item.body}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       <section className="final-cta reveal">
-        <p className="eyebrow">May be tired, but we are not asleep</p>
-        <h2>May be tired, but we are not asleep.</h2>
+        <p className="eyebrow">Still Tired. Still Here.</p>
+        <h2>May Be TIRED, But We&apos;re Not ASLEEP.</h2>
         <p className="section-lede">
-          Always Tired is back with a completed website, active Trait Offers, a
-          public donation wallet, a stronger mission, and a community that can
-          help shape what comes next.
+          Always Tired was built from real exhaustion. The story was mishandled.
+          The mission was left unfinished. The public side went stagnant.
         </p>
-        <p className="section-lede">The next chapter belongs to the holders.</p>
+        <p className="section-lede">
+          But the SleepyHeads stayed. Now the keys are finally where they need
+          to be, the donation wallet is public, the collection has a voice
+          again, and the community gets to help decide what comes next.
+        </p>
+        <p className="section-lede">
+          This is Web3. Nothing here comes with promised success. We will not
+          pretend otherwise.
+        </p>
+        <p className="statement">
+          Still tired. Still here. Still not giving up. The Tired Still Remain.
+        </p>
         <div className="actions">
-          <ButtonLink className="primary" href="/collection">
-            Explore the Collection
+          <ButtonLink className="primary" href="/mission">
+            Learn About ME/CFS
           </ButtonLink>
-          <ButtonLink external href={siteConfig.links.traitOffers}>
-            View Trait Offers
+          <ButtonLink href="/collection">View Collection</ButtonLink>
+          <ButtonLink href="/donate">Donate</ButtonLink>
+          <ButtonLink external href={siteConfig.links.discord}>
+            Join Discord
           </ButtonLink>
-          <ButtonLink href="/discord">Join the Community</ButtonLink>
         </div>
       </section>
     </>

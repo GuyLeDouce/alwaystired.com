@@ -18,10 +18,6 @@ function eth(value: number) {
   })} ETH`;
 }
 
-function shortAddress(address: string) {
-  return `${address.slice(0, 6)}...${address.slice(-4)}`;
-}
-
 const fallbackBalance: DonationBalance = {
   ethBalance: 0,
   ethUsdPrice: 0,
@@ -95,9 +91,10 @@ export function DonationTracker({ compact = false }: { compact?: boolean }) {
           <h2 className="section-title">{siteConfig.donation.donationTitle}</h2>
           <p className="section-lede">{siteConfig.donation.donationDescription}</p>
           <p className="section-lede">
-            Holders can help source trusted donation destinations, discuss the
-            options, vote on where support should go, and keep the final result
-            visible.
+            Once a goal is reached, SleepyHeads will help nominate and review
+            possible ME/CFS-related donation destinations. Non-holders are
+            welcome to suggest ideas and join the discussion. Holders will make
+            the official decision through a future holder-only voting system.
           </p>
           {!compact && (
             <div className="grid two">
@@ -112,8 +109,8 @@ export function DonationTracker({ compact = false }: { compact?: boolean }) {
                 <h3>Careful by design</h3>
                 <p>
                   This site never connects to wallets or takes custody. Donations
-                  are sent directly by the donor from their own Ethereum wallet,
-                  and each donor is responsible for their own decision.
+                  are sent directly by the donor from their own Ethereum wallet
+                  on Ethereum mainnet only.
                 </p>
               </div>
             </div>
@@ -162,7 +159,7 @@ export function DonationTracker({ compact = false }: { compact?: boolean }) {
               : " Price data could not be loaded right now."}
           </p>
           <div className="wallet-row">
-            <code title={data.walletAddress}>{shortAddress(data.walletAddress)}</code>
+            <code title={data.walletAddress}>{data.walletAddress}</code>
             <button className="button" onClick={copyWallet} type="button">
               {copied ? "Copied" : "Copy wallet"}
             </button>
@@ -175,7 +172,12 @@ export function DonationTracker({ compact = false }: { compact?: boolean }) {
             >
               Donate ETH
             </button>
-            <a className="button" href={etherscanWalletUrl} rel="noreferrer" target="_blank">
+            <a
+              className="button"
+              href={etherscanWalletUrl}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               View on Etherscan
             </a>
             <button
@@ -226,21 +228,34 @@ export function DonationTracker({ compact = false }: { compact?: boolean }) {
                 </button>
               </div>
               <ol>
+                <li>Copy the donation wallet above.</li>
                 <li>Open your Ethereum wallet.</li>
-                <li>Choose Send.</li>
-                <li>Paste the donation wallet address.</li>
-                <li>Enter the amount of ETH you want to send.</li>
-                <li>Review the network, gas fee, and wallet address carefully.</li>
-                <li>Confirm the transaction.</li>
+                <li>Send ETH on Ethereum mainnet only.</li>
+                <li>Carefully confirm the full wallet address before submitting.</li>
+                <li>
+                  Once sent, the transaction will be publicly visible on
+                  Etherscan and cannot be reversed.
+                </li>
               </ol>
               <ul>
-                <li>Only send ETH on Ethereum mainnet unless official instructions say otherwise.</li>
+                <li>Only send ETH on Ethereum mainnet.</li>
                 <li>Always double-check the full wallet address before sending.</li>
-                <li>Crypto transactions are irreversible.</li>
-                <li>This wallet is publicly visible on-chain.</li>
+                <li>
+                  Never send from an exchange or network unless you are fully
+                  sure it supports Ethereum mainnet withdrawals to this address.
+                </li>
+                <li>
+                  This site does not connect wallets and does not ask users to
+                  sign anything to donate.
+                </li>
               </ul>
               <div className="actions">
-                <a className="button primary" href={etherscanWalletUrl} rel="noreferrer" target="_blank">
+                <a
+                  className="button primary"
+                  href={etherscanWalletUrl}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
                   View wallet on Etherscan
                 </a>
               </div>

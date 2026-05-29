@@ -5,16 +5,16 @@ import { siteConfig } from "@/lib/site-config";
 export const metadata = {
   title: "Collection",
   description:
-    "Browse all 7,777 Always Tired NFTs, search traits, view characters, and reconnect with the collection behind the ME/CFS awareness revival.",
+    "Browse all 7,777 Always Tired NFTs, search tokens and traits, and explore the collection behind the SleepyHead community.",
 };
 
 const holderRoles = [
-  "Voting on donation destinations",
+  "Voting on donation destinations when holder voting is ready",
   "Participating in awareness campaigns",
   "Helping source research organizations or advocacy groups",
-  "Using NFTs as ambassador badges",
-  "Participating in $COFFEE-related systems",
-  "Receiving future community recognition or rewards",
+  "Using NFTs as SleepyHead community badges",
+  "Joining $COFFEE conversations as it is reviewed",
+  "Creating art, posts, or resources that point back to ME/CFS awareness",
   "Helping guide the direction of the project",
 ];
 
@@ -22,20 +22,16 @@ export default function CollectionPage() {
   return (
     <>
       <section className="page-hero reveal">
-        <p className="eyebrow">Always Tired NFTs</p>
-        <h1>Browse the tired. Find your ambassador.</h1>
+        <p className="eyebrow">Explore the Collection</p>
+        <h1>Browse the tired. Find your SleepyHead.</h1>
         <p>
-          Explore all 7,777 Always Tired NFTs, search traits, view characters,
-          and reconnect with the collection that now represents a bigger
-          awareness mission.
+          Browse the full Always Tired NFT collection, search tokens, explore
+          traits, and reconnect with the tired faces that started it all.
         </p>
         <p>
-          Each Always Tired NFT is part of the revived collection and the
-          growing community mission around ME/CFS awareness.
-        </p>
-        <p>
-          Collectors can use this page to browse the full set, search specific
-          traits, look up tokens, and discover characters across the collection.
+          These characters represent exhaustion, chronic illness, fatigue, dark
+          humour, survival, and the strange ability to keep trying even when the
+          body says no.
         </p>
         <div className="actions">
           <ButtonLink external href={siteConfig.links.traitOffers}>
@@ -53,8 +49,8 @@ export default function CollectionPage() {
         <div className="container">
           <div className="grid two">
             <div className="copy-panel reveal">
-              <p className="eyebrow">The collection identity</p>
-              <h2 className="section-title">The art is the identity.</h2>
+              <p className="eyebrow">The art is the identity</p>
+              <h2 className="section-title">More than profile pictures.</h2>
             </div>
             <div className="copy-panel reveal">
               <p>
@@ -63,10 +59,9 @@ export default function CollectionPage() {
                 collection work.
               </p>
               <p>
-                In this new chapter, the NFTs are more than profile pictures.
-                They are community symbols. They are conversation starters. They
-                are ambassador badges for a project trying to raise awareness
-                around misunderstood illness.
+                In this chapter, the NFTs are community symbols. They are
+                conversation starters. They are badges for a group trying to
+                raise awareness around a misunderstood illness.
               </p>
               <p>
                 Holding one does not automatically mean someone has ME/CFS or
@@ -83,23 +78,47 @@ export default function CollectionPage() {
         <div className="container">
           <div className="grid two">
             <div className="copy-panel reveal">
+              <p className="eyebrow">Collecting with context</p>
+              <h2 className="section-title">You do not need to collect to care.</h2>
+            </div>
+            <div className="copy-panel reveal">
+              <p>
+                Collecting an Always Tired NFT is one way to support the
+                community and become part of the SleepyHead voice.
+              </p>
+              <p>
+                When royalties are honoured, up to 10% of sales can flow
+                directly to the public donation wallet. This depends on how a
+                sale is listed and whether royalties are honoured by the
+                marketplace.
+              </p>
+              <p>
+                You do not need to own an NFT to donate, learn, or share ME/CFS
+                resources. But holders will help shape official community
+                decisions as the community takeover continues.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <div className="grid two">
+            <div className="copy-panel reveal">
               <p className="eyebrow">Trait Offers are live</p>
               <h2 className="section-title">Collectors can target the tired they want.</h2>
             </div>
             <div className="copy-panel reveal">
               <p>
-                Trait Offers are now active for Always Tired NFTs, giving
-                collectors a better way to target specific looks, traits, and
-                characters across the collection.
+                Trait Offers are active for Always Tired NFTs, giving collectors
+                a cleaner way to target specific looks, traits, and characters
+                across the collection.
               </p>
               <p>
-                This helps bring more movement back to the marketplace and gives
-                holders another reason to explore what they own.
-              </p>
-              <p>
-                Whether someone is hunting rare traits, building a themed set,
-                or just looking for the perfect tired friend, Trait Offers make
-                collection activity easier and more intentional.
+                Whether someone is hunting a specific trait, building a themed
+                set, or just looking for the perfect tired friend, Trait Offers
+                make collection activity easier and more intentional.
               </p>
               <div className="actions">
                 <ButtonLink className="primary" external href={siteConfig.links.traitOffers}>
@@ -117,8 +136,8 @@ export default function CollectionPage() {
             <p className="eyebrow">Holder participation</p>
             <h2 className="section-title">What holding can mean moving forward.</h2>
             <p className="section-lede">
-              The future vision is for Always Tired holders to have a
-              meaningful role in the ecosystem.
+              Every Always Tired NFT is more than a collectible. It is a seat in
+              the SleepyHead community and a voice in where we go next.
             </p>
           </div>
           <div className="copy-panel reveal">
@@ -128,8 +147,8 @@ export default function CollectionPage() {
               ))}
             </ul>
             <p>
-              Nothing here should be treated as a guaranteed financial benefit.
-              The focus is participation, awareness, and community utility.
+              Nothing here should be treated as a promise of financial value.
+              The focus is participation, awareness, and community direction.
             </p>
           </div>
         </div>

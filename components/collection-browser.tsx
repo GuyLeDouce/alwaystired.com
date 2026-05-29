@@ -165,7 +165,7 @@ export function CollectionBrowser() {
                   className="collection-card reveal"
                   href={getOpenSeaAssetUrl(nft.id)}
                   key={nft.id}
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   <div className="collection-image">

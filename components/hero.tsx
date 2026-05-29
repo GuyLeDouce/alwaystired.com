@@ -11,28 +11,47 @@ export function Hero() {
           <span className="tired">Tired</span>
           <span className="nfts">NFTs</span>
         </div>
-        <p className="eyebrow">Community-led revival era</p>
+        <p className="eyebrow">Still tired. Still here.</p>
         <h1>The Tired Still Remain.</h1>
         <p className="lede">
-          Always Tired NFTs is a community-led revival built around ME/CFS
-          awareness, holder participation, transparent donations, and the belief
-          that tired does not mean finished.
+          Always Tired NFTs never actually left. The old founder stepped away.
+          The public side went stagnant. But the SleepyHeads kept showing up
+          through games, raffles, donations, dark humour, and community.
         </p>
         <p className="lede">
-          This project began as a collection of 7,777 exhausted little
-          characters. Today, it is becoming something more useful: a public home
-          for awareness, action, and community-driven support.
+          Now the keys are finally in the hands of the people still here. Not a
+          restart. Not fake hype. A community takeover.
+        </p>
+        <p className="statement">May Be TIRED, But We&apos;re Not ASLEEP.</p>
+        <div className="stat-strip inline-stats" aria-label="Project facts">
+          <div>
+            <strong>7,777</strong>
+            <span>Supply</span>
+          </div>
+          <div>
+            <strong>ETH</strong>
+            <span>Collection</span>
+          </div>
+          <div>
+            <strong>ME/CFS</strong>
+            <span>Awareness</span>
+          </div>
+          <div>
+            <strong>Public</strong>
+            <span>Donation Wallet</span>
+          </div>
+        </div>
+        <p className="fine-print">
+          Guy holds the keys. The community holds the direction.
         </p>
         <div className="actions">
-          <ButtonLink className="primary" href="/collection">
-            Explore the Collection
+          <ButtonLink className="primary" href="/mission">
+            Learn About ME/CFS
           </ButtonLink>
-          <ButtonLink external href={siteConfig.links.traitOffers}>
-            View Trait Offers
-          </ButtonLink>
-          <ButtonLink href="/discord">Join the Community</ButtonLink>
-          <ButtonLink className="coffee" href="/donate">
-            Donate ETH
+          <ButtonLink href="/collection">View Collection</ButtonLink>
+          <ButtonLink href="/donate">Donate / View Fund</ButtonLink>
+          <ButtonLink external href={siteConfig.links.discord}>
+            Join Discord
           </ButtonLink>
         </div>
       </div>

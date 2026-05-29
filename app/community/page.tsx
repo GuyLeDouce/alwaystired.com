@@ -5,51 +5,44 @@ import { siteConfig } from "@/lib/site-config";
 export const metadata = {
   title: "Community",
   description:
-    "Always Tired NFTs community-led revival: holder ambassadors, ME/CFS awareness, transparent donations, and public participation.",
+    "The SleepyHeads community behind Always Tired NFTs: stewardship, games, $COFFEE, ME/CFS awareness, donations, and holder-guided decisions.",
 };
 
-const ambassadorActions = [
-  "Sharing educational content",
-  "Helping correct misunderstandings about ME/CFS",
-  "Supporting donation drives",
-  "Submitting possible donation destinations",
-  "Voting on where funds go",
-  "Creating art or memes that point back to awareness",
-  "Bringing new people into the conversation",
-  "Representing the project with care",
+const communityActions = [
+  "Join Discord",
+  "Play games",
+  "Earn $COFFEE",
+  "Join raffles",
+  "Suggest donation destinations",
+  "Share ME/CFS resources",
+  "Donate NFTs or prize opportunities",
+  "Vote as a holder when voting becomes available",
 ];
 
-const communityWork = [
-  "Suggesting ME/CFS organizations or research facilities",
-  "Sharing patient advocacy resources",
-  "Helping decide donation destinations",
-  "Creating awareness posts",
-  "Participating in holder votes",
-  "Supporting collection activity through Trait Offers",
-  "Helping explain the project to new people",
-  "Joining Discord discussions around $COFFEE, future utility, and awareness initiatives",
-];
-
-const loop = [
+const holderActions = [
   {
-    title: "Awareness brings attention.",
-    body: "Content, art, posts, and community activity help more people learn about ME/CFS.",
+    title: "Learn",
+    body: "Read and share credible ME/CFS information before speaking for the mission.",
   },
   {
-    title: "Attention brings support.",
-    body: "Support can come through donations, collector activity, partnerships, community campaigns, and outside interest.",
+    title: "Share",
+    body: "Help keep awareness visible across social platforms and communities.",
   },
   {
-    title: "Support becomes action.",
-    body: "Holders help source and vote on where donations should go.",
+    title: "Support",
+    body: "Suggest credible donation destinations, resources, or awareness opportunities.",
   },
   {
-    title: "Action becomes proof.",
-    body: "Donation results, transaction records, and updates are shared publicly.",
+    title: "Play",
+    body: "Join community games, raffles, and events that keep the SleepyHeads active.",
   },
   {
-    title: "Proof builds trust.",
-    body: "Trust gives the project a stronger foundation for the next campaign.",
+    title: "Vote",
+    body: "Holders will help decide where donation funds go once the holder system is ready.",
+  },
+  {
+    title: "Stay",
+    body: "Keep showing up, even when things move slowly.",
   },
 ];
 
@@ -57,18 +50,19 @@ export default function CommunityPage() {
   return (
     <>
       <section className="page-hero reveal">
-        <p className="eyebrow">Holder ambassadors</p>
+        <p className="eyebrow">The SleepyHeads</p>
         <h1>The community is the project now.</h1>
         <p>
-          Always Tired NFTs is being rebuilt around the people who stayed, the
-          people who care, and the people willing to help turn a tired
-          collection into an active awareness movement.
+          The SleepyHeads are the reason Always Tired still exists. They stayed
+          when the public side went stagnant, kept the games moving, donated
+          prizes, joined raffles, kept $COFFEE alive, shared the art, and
+          refused to let the project disappear.
         </p>
         <p>
-          The website is complete. Trait Offers are active. The donation wallet
-          is public. The mission is clearer.
+          Now that the operational keys are finally in community hands, the
+          SleepyHeads are not just watching what happens next. They are helping
+          decide it.
         </p>
-        <p>Now the next step is community participation.</p>
       </section>
 
       <section className="section">
@@ -78,47 +72,42 @@ export default function CommunityPage() {
           </div>
           <div className="stack">
             <div className="copy-panel reveal">
-              <h2 className="section-title">Not passive holders. Active ambassadors.</h2>
+              <p className="eyebrow">Still tired. Still here.</p>
+              <h2 className="section-title">The SleepyHeads kept showing up.</h2>
               <p>
-                Community-led does not mean chaos. It means the project should
-                grow through visible discussion, holder input, shared
-                responsibility, and transparent decision-making.
+                Some are collectors. Some care deeply about ME/CFS. Some are
+                here for the art, games, raffles, dark humour, and strange
+                community moments. Most are probably some mix of all of it.
               </p>
               <p>
-                Always Tired NFT holders will be encouraged to help shape the
-                direction of the project, especially around donation sourcing
-                and awareness campaigns.
+                Holding an Always Tired NFT gives you a voice in the community.
+                It does not make you a doctor. It does not make you an expert.
+                It does not make you better than anyone else who cares.
               </p>
-              <ul className="feature-list">
-                {communityWork.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
               <p>
-                The project does not need everyone to do everything. It needs
-                enough people doing something.
+                It does make you part of the group that will guide official
+                community decisions as the project moves forward.
+              </p>
+              <p>
+                You do not need to own an NFT to learn, donate, care, or join
+                the conversation. But holders will guide the official votes.
               </p>
             </div>
 
             <div className="copy-panel reveal">
-              <h2 className="section-title">Every holder can help carry the message.</h2>
+              <p className="eyebrow">Community stewardship</p>
+              <h2 className="section-title">Guy holds the keys. The community holds the direction.</h2>
               <p>
-                The vision is for Always Tired NFT holders to become
-                recognizable ambassadors for ME/CFS awareness.
+                Guy LeDouce now holds the operational keys needed to keep Always
+                Tired moving, including the donation wallet, contract/deployer
+                access, Discord, website, and X account.
               </p>
               <p>
-                That does not mean every holder has to constantly post, donate,
-                or run campaigns. It means holding an Always Tired NFT can
-                become connected to a bigger purpose.
+                But this is not a one-person project and Guy is not being framed
+                as a new founder. The direction belongs to the SleepyHeads.
               </p>
-              <ul className="feature-list">
-                {ambassadorActions.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-              <p>
-                Always Tired should be weird, fun, emotional, and human, but it
-                should also be respectful.
+              <p className="statement">
+                1 collection. 7,777 tokens. 7,777 pieces of the community voice.
               </p>
             </div>
           </div>
@@ -128,21 +117,21 @@ export default function CommunityPage() {
       <section className="section">
         <div className="container">
           <div className="section-head reveal">
-            <p className="eyebrow">How support becomes action</p>
-            <h2 className="section-title">A better structure for doing good.</h2>
+            <p className="eyebrow">What SleepyHeads can do</p>
+            <h2 className="section-title">Not passive holders. Active stewards.</h2>
             <p className="section-lede">
-              The project&apos;s future should be built around a simple loop.
+              Community-led does not mean chaos. It means visible discussion,
+              shared responsibility, and decisions that holders can understand.
             </p>
           </div>
           <div className="grid three">
-            {loop.map((step) => (
-              <div className="card reveal" key={step.title}>
-                <h3>{step.title}</h3>
-                <p>{step.body}</p>
+            {holderActions.map((action) => (
+              <div className="card reveal" key={action.title}>
+                <h3>{action.title}</h3>
+                <p>{action.body}</p>
               </div>
             ))}
           </div>
-          <p className="section-lede spaced reveal">That loop is the real vision.</p>
         </div>
       </section>
 
@@ -150,26 +139,51 @@ export default function CommunityPage() {
         <div className="container">
           <div className="grid two">
             <div className="copy-panel reveal">
-              <p className="eyebrow">Build in public</p>
-              <h2 className="section-title">The rebuild happens in public.</h2>
+              <p className="eyebrow">Community actions</p>
+              <h2 className="section-title">Enough people doing something.</h2>
+            </div>
+            <div className="copy-panel reveal">
+              <p>
+                Always Tired does not need everyone to do everything. It needs
+                enough people doing something useful, honest, and visible.
+              </p>
+              <ul className="feature-list">
+                {communityActions.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+              <p>
+                The community should stay weird, funny, emotional, and human.
+                It should also stay respectful around ME/CFS and the people
+                living with it.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <div className="grid two">
+            <div className="copy-panel reveal">
+              <p className="eyebrow">Discord</p>
+              <h2 className="section-title">The work happens where SleepyHeads gather.</h2>
             </div>
             <div className="copy-panel reveal">
               <p>
                 Discord is where holders can discuss ideas, suggest donation
-                destinations, help shape $COFFEE utility, coordinate awareness
-                pushes, and participate in future votes.
+                destinations, join games, follow $COFFEE conversations, bring
+                up better ideas, and help keep the project honest.
               </p>
               <p>
-                This is where the community can ask hard questions, offer better
-                ideas, and help keep the project honest.
+                It is also the place to open a ticket if you want to donate NFTs,
+                whitelist opportunities, or prize contributions for games,
+                raffles, sweep campaigns, and community events.
               </p>
-              <p>
-                If Always Tired is going to become something meaningful, it
-                needs the people who care to be part of the conversation.
-              </p>
+              <p>Do not send NFTs or assets without speaking with the team first.</p>
               <div className="actions">
                 <ButtonLink className="primary" href="/discord">
-                  Join the Discord
+                  Join the SleepyHeads
                 </ButtonLink>
                 <ButtonLink external href={siteConfig.links.traitOffers}>
                   View Trait Offers
@@ -181,7 +195,7 @@ export default function CommunityPage() {
       </section>
 
       <section className="final-cta reveal">
-        <p className="eyebrow">May be tired, but we are not asleep</p>
+        <p className="eyebrow">May Be TIRED, But We&apos;re Not ASLEEP</p>
         <h2>Join the tired side of the fight.</h2>
         <p className="section-lede">
           You do not need to be loud to matter. You do not need to be an expert
@@ -190,9 +204,9 @@ export default function CommunityPage() {
         <p className="section-lede">You just need to care enough to stay involved.</p>
         <div className="actions">
           <ButtonLink className="primary" href="/discord">
-            Join the Community
+            Join Discord
           </ButtonLink>
-          <ButtonLink href="/mission">Read the Mission</ButtonLink>
+          <ButtonLink href="/mission">Learn About ME/CFS</ButtonLink>
         </div>
       </section>
     </>

@@ -1,19 +1,19 @@
 const phases = [
   {
-    title: "Nomination phase",
-    body: "The community can propose ME/CFS-aligned research groups, advocacy organizations, patient support initiatives, and education efforts.",
+    title: "Community suggestions",
+    body: "SleepyHeads and supporters bring possible ME/CFS-related donation destinations into Discord for discussion.",
   },
   {
-    title: "Community review",
-    body: "Suggested recipients should be checked for legitimacy, transparency, mission fit, public reputation, and alignment with the cause.",
+    title: "SleepyHead review",
+    body: "The community checks legitimacy, transparency, mission fit, public reputation, and whether the destination can receive funds properly.",
   },
   {
     title: "Holder vote",
-    body: "Always Tired NFT holders help decide where support should go once a donation campaign is ready for distribution.",
+    body: "A holder vote opens once the voting system is ready and a donation cycle is ready for distribution.",
   },
   {
-    title: "Donation proof",
-    body: "Transaction records, vote results, and any available donation confirmations should be posted publicly.",
+    title: "Public proof",
+    body: "Funds are sent, transaction records are shared, and any available confirmation is posted publicly.",
   },
 ];
 
@@ -22,12 +22,12 @@ export function HolderVote() {
     <section className="section">
       <div className="container">
         <div className="section-head reveal">
-          <p className="eyebrow">Holder-led donation process</p>
+          <p className="eyebrow">Holder-guided support</p>
           <h2 className="section-title">The destination should be decided in public.</h2>
           <p className="section-lede">
-            Always Tired holders can help source donation destinations, review
-            options, vote on where funds should go, and make the final result
-            visible. The goal is support with receipts, not vague goodwill.
+            Always Tired should not randomly pick donation destinations behind
+            closed doors. The better process is simple: suggest, review, vote,
+            send, show proof, and begin again.
           </p>
         </div>
         <div className="grid four">

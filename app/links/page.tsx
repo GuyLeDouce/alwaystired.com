@@ -1,47 +1,47 @@
 import { NftImage } from "@/components/nft-image";
-import { siteConfig } from "@/lib/site-config";
+import { meCfsResources, siteConfig } from "@/lib/site-config";
 
 export const metadata = {
   title: "Links",
   description:
-    "Official Always Tired NFT links, collection tools, donation wallet, marketplace pages, and trusted ME/CFS learning resources.",
+    "Official Always Tired NFT links, collection tools, donation wallet, OpenSea, Etherscan, and ME/CFS learning resources.",
 };
 
 const projectLinks = [
   {
     title: "Website",
-    body: "The official Always Tired NFTs home",
+    body: "The official Always Tired NFTs home.",
     action: "Open",
     href: siteConfig.siteUrl,
   },
   {
     title: "Collection Viewer",
-    body: "Browse all 7,777 NFTs, search traits, and view characters",
+    body: "Browse all 7,777 NFTs, search tokens, and explore traits.",
     action: "Browse",
     href: "/collection",
     internal: true,
   },
   {
     title: "OpenSea Collection",
-    body: "View the Always Tired NFTs collection on OpenSea",
+    body: "View the Always Tired NFTs collection on OpenSea.",
     action: "Open",
     href: siteConfig.links.openSea,
   },
   {
     title: "Trait Offers",
-    body: "Trait Offers are active for targeted collection activity",
+    body: "Trait Offers are active for targeted collection activity.",
     action: "View",
     href: siteConfig.links.traitOffers,
   },
   {
     title: "Discord",
-    body: "Join the community revival and holder discussions",
+    body: "Join the SleepyHeads and community discussions.",
     action: "Join",
-    href: siteConfig.links.discord,
+    href: "https://alwaystirednfts.com/discord",
   },
   {
     title: "X / Twitter",
-    body: "Follow updates, awareness posts, and public project notes",
+    body: "Follow @alwaystirednfts for official updates.",
     action: "Follow",
     href: siteConfig.links.x,
   },
@@ -59,43 +59,19 @@ const projectLinks = [
   },
 ];
 
-const resourceLinks = [
-  {
-    title: "CDC ME/CFS Information",
-    body: "A clear introduction to ME/CFS symptoms, post-exertional malaise, diagnosis basics, and clinical information.",
-    href: "https://www.cdc.gov/me-cfs/",
-  },
-  {
-    title: "NIH ME/CFS Research",
-    body: "Research-focused information describing ME/CFS as a serious, chronic, complex systemic disease.",
-    href: "https://www.nih.gov/advancing-mecfs-research",
-  },
-  {
-    title: "Open Medicine Foundation",
-    body: "A research organization funding collaborative work into ME/CFS, Long COVID, and related chronic complex diseases.",
-    href: "https://www.omf.ngo/",
-  },
-  {
-    title: "Solve M.E.",
-    body: "A nonprofit focused on research, advocacy, and education for ME/CFS, Long COVID, and post-infection diseases.",
-    href: "https://solvecfs.org/",
-  },
-  {
-    title: "MEAction",
-    body: "A patient-led advocacy movement working to build recognition, education, and action around ME/CFS.",
-    href: "https://www.meaction.net/",
-  },
-];
-
 export default function LinksPage() {
   return (
     <>
       <section className="page-hero reveal">
-        <p className="eyebrow">Official links and resources</p>
+        <p className="eyebrow">Official links and trusted resources</p>
         <h1>Official links and trusted resources.</h1>
         <p>
           Find the official Always Tired NFT links, collection tools, donation
           wallet, marketplace pages, and helpful ME/CFS learning resources.
+        </p>
+        <p>
+          External ME/CFS links are educational starting points, not official
+          Always Tired partners unless stated separately.
         </p>
       </section>
 
@@ -113,10 +89,11 @@ export default function LinksPage() {
               <div className="grid">
                 {projectLinks.map((link) => (
                   <a
+                    aria-label={`${link.title}: ${link.body}`}
                     className="link-card reveal"
                     href={link.href}
                     key={link.title}
-                    rel={link.internal ? undefined : "noreferrer"}
+                    rel={link.internal ? undefined : "noopener noreferrer"}
                     target={link.internal ? undefined : "_blank"}
                   >
                     <div>
@@ -134,14 +111,19 @@ export default function LinksPage() {
               <div className="section-head reveal">
                 <p className="eyebrow">ME/CFS learning resources</p>
                 <h2 className="section-title">Learn before you speak for the mission.</h2>
+                <p className="section-lede">
+                  These resources are starting points for learning, not medical
+                  advice.
+                </p>
               </div>
               <div className="grid">
-                {resourceLinks.map((link) => (
+                {meCfsResources.map((link) => (
                   <a
+                    aria-label={`Open ${link.title} in a new tab`}
                     className="link-card reveal"
                     href={link.href}
                     key={link.title}
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                     target="_blank"
                   >
                     <div>

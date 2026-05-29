@@ -16,7 +16,12 @@ export function ButtonLink({
 }: ButtonLinkProps) {
   if (external) {
     return (
-      <a className={`button ${className}`} href={href} rel="noreferrer" target="_blank">
+      <a
+        className={`button ${className}`}
+        href={href}
+        rel="noopener noreferrer"
+        target="_blank"
+      >
         {children}
       </a>
     );

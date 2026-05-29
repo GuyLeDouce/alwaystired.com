@@ -2,6 +2,7 @@ export const siteConfig = {
   name: "Always Tired NFTs",
   tagline: "The Tired Still Remain.",
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://alwaystirednfts.com",
+  supply: "7,777",
   links: {
     discord: "https://discord.gg/xheBXt48pR",
     openSea: "https://opensea.io/collection/always-tired-official",
@@ -17,11 +18,44 @@ export const siteConfig = {
       "0xce2b924F55470381E072a6379D46f89093B7f7Ea",
     donationGoalUsd: 5000,
     etherscanBaseUrl: "https://etherscan.io",
-    donationTitle: "A Public Wallet For Real Support",
+    donationTitle: "A Public Wallet for Real Support",
     donationDescription:
-      "Always Tired NFTs is building a transparent ETH donation effort where holders help source, discuss, and vote on the best places to support ME/CFS awareness, research, advocacy, and patient-centered work.",
+      "The Always Tired community fund is designed to be simple and transparent: a public Ethereum wallet, a visible first goal, and a holder-led decision about where support goes.",
   },
 };
+
+export const meCfsResources = [
+  {
+    title: "CDC ME/CFS Overview",
+    body: "A plain-language overview of ME/CFS symptoms, diagnosis, and patient information.",
+    href: "https://www.cdc.gov/me-cfs/about/index.html",
+  },
+  {
+    title: "NIH ME/CFS Research",
+    body: "Information on federal research efforts and scientific understanding of ME/CFS.",
+    href: "https://www.nih.gov/advancing-mecfs-research",
+  },
+  {
+    title: "NIH About ME/CFS",
+    body: "A deeper look at ME/CFS as a serious, chronic, complex, systemic disease.",
+    href: "https://www.nih.gov/advancing-mecfs-research/about-mecfs",
+  },
+  {
+    title: "National ME/FM Action Network",
+    body: "Canadian advocacy and support resources for ME/CFS and fibromyalgia communities.",
+    href: "https://www.mefmaction.com/",
+  },
+  {
+    title: "MEAction",
+    body: "Global advocacy, education, and patient-led action for people living with ME.",
+    href: "https://www.meaction.net/",
+  },
+  {
+    title: "Open Medicine Foundation Canada",
+    body: "Canadian research fundraising and education supporting collaborative ME/CFS research.",
+    href: "https://www.omfcanada.ngo/",
+  },
+];
 
 const nftIds = [
   "1",

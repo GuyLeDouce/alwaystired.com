@@ -11,14 +11,14 @@ export const metadata: Metadata = {
     template: "%s | Always Tired NFTs",
   },
   description:
-    "Always Tired NFTs is entering a community-led revival era for holders, community, and future ME/CFS awareness efforts.",
+    "Always Tired NFTs is a community-led Ethereum NFT collection rebuilding around ME/CFS awareness, public donation transparency, and SleepyHead stewardship.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: "Always Tired NFTs",
     description:
-      "The Tired Still Remain. A community-led revival for holders, transparency, and ME/CFS awareness.",
+      "The Tired Still Remain. A community-led Ethereum NFT collection focused on ME/CFS awareness, donation transparency, and SleepyHead stewardship.",
     url: siteConfig.siteUrl,
     siteName: "Always Tired NFTs",
     images: [
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Always Tired NFTs",
     description:
-      "The Tired Still Remain. A community-led revival for holders and ME/CFS awareness.",
+      "The Tired Still Remain. A community-led Ethereum NFT collection for SleepyHeads, ME/CFS awareness, and public donation transparency.",
     images: ["/assets/nfts/1000.jpg"],
   },
 };

@@ -4,74 +4,82 @@ import { HolderVote } from "@/components/holder-vote";
 export const metadata = {
   title: "Donate",
   description:
-    "A transparent Always Tired NFTs public donation wallet with holder-sourced donation destinations and holder voting.",
+    "The Always Tired NFTs community fund: a public Ethereum wallet, visible donation goal, and holder-led ME/CFS donation decisions.",
 };
 
 const processCards = [
   {
     title: "Funds are collected publicly",
-    body: "The donation wallet is visible on-chain, allowing anyone to verify incoming and outgoing transactions.",
+    body: "ETH donations go directly to the public Ethereum wallet. Anyone can verify incoming and outgoing transactions on-chain.",
   },
   {
-    title: "Holders help source donation destinations",
-    body: "The community can suggest research facilities, nonprofit organizations, advocacy groups, patient support initiatives, or other ME/CFS-aligned causes.",
+    title: "SleepyHeads source destinations",
+    body: "The community can suggest research groups, advocacy organizations, education efforts, patient support initiatives, or other ME/CFS-aligned destinations.",
   },
   {
-    title: "Suggested recipients are reviewed",
-    body: "Before any vote, the community should look at legitimacy, transparency, mission fit, public reputation, and alignment with ME/CFS awareness or support.",
+    title: "Suggestions are reviewed",
+    body: "Before any vote, the community should look at legitimacy, transparency, mission fit, public reputation, and whether the destination can receive funds properly.",
   },
   {
     title: "Holders vote",
-    body: "Always Tired NFT holders help decide where the donation should go.",
+    body: "Holders will make the official decision through a future holder-only voting system on the website.",
   },
   {
     title: "Proof is shared",
-    body: "Once funds are sent, the result should be posted publicly with transaction proof and any available donation confirmation.",
+    body: "After funds are sent, transaction proof and any available donation confirmation should be posted publicly.",
   },
 ];
 
 const categories = [
   {
-    title: "ME/CFS research",
-    body: "Groups funding biological research, diagnostics, treatment exploration, and clinical studies.",
+    title: "Research",
+    body: "Groups funding or conducting serious ME/CFS research.",
   },
   {
-    title: "Long COVID and post-infectious disease research",
-    body: "ME/CFS and Long COVID have important symptom overlap, and some research organizations study both areas.",
+    title: "Advocacy",
+    body: "Organizations helping people with ME/CFS be seen, heard, and supported.",
   },
   {
-    title: "Patient advocacy",
-    body: "Organizations helping patients be heard by governments, doctors, institutions, and the public.",
+    title: "Education",
+    body: "Trusted resources that help the public understand ME/CFS more clearly.",
   },
   {
-    title: "Caregiver and patient resources",
-    body: "Groups providing practical support, education, or community resources for people affected by ME/CFS.",
+    title: "Patient Support",
+    body: "Efforts that provide practical help, visibility, or support to patients and families.",
   },
   {
-    title: "Awareness campaigns",
-    body: "Efforts that help explain ME/CFS to the general public in a clear and respectful way.",
+    title: "Community Suggestions",
+    body: "SleepyHeads and supporters can bring credible options forward for discussion.",
   },
+];
+
+const donationNotes = [
+  "Send ETH on Ethereum mainnet only.",
+  "Always confirm the full wallet address before sending.",
+  "Transactions are public and irreversible.",
+  "The ETH/USD value shown is approximate and may change with market price.",
+  "The site does not connect wallets for donations.",
+  "The site does not ask users to sign anything to donate.",
+  "The site does not provide tax advice.",
+  "Donations are not stated to be tax deductible unless officially confirmed.",
 ];
 
 export default function DonatePage() {
   return (
     <>
       <section className="page-hero reveal">
-        <p className="eyebrow">Transparent donation wallet</p>
-        <h1>A public wallet for real support.</h1>
+        <p className="eyebrow">Community Fund</p>
+        <h1>A public wallet. A visible goal. A holder-led decision.</h1>
         <p>
-          Always Tired NFTs is building a transparent donation effort where
-          holders help source, discuss, and vote on the best places to support.
+          The Always Tired community fund is designed to be simple and
+          transparent. The goal is not just to raise funds. The goal is to raise
+          funds carefully.
         </p>
         <p>
-          The goal is not just to raise funds. The goal is to raise funds
-          carefully.
-        </p>
-        <p>
-          The community will work together to identify ME/CFS research groups,
-          advocacy organizations, patient support initiatives, and related
-          causes that may be worth supporting. Once donation goals are reached,
-          holders can help decide where funds should go.
+          The current goal is $5,000 USD worth of ETH. This is a starting point
+          chosen to give the community something clear to work toward. Future
+          goals, donation cycles, and distribution plans may change through
+          holder discussion.
         </p>
       </section>
 
@@ -81,7 +89,10 @@ export default function DonatePage() {
         <div className="container">
           <div className="section-head reveal">
             <p className="eyebrow">Simple. Public. Holder-led.</p>
-            <h2 className="section-title">Support with receipts.</h2>
+            <h2 className="section-title">No hidden wallets. No vague promises.</h2>
+            <p className="section-lede">
+              The community raises it. The community reviews it. The holders decide.
+            </p>
           </div>
           <div className="grid three">
             {processCards.map((card) => (
@@ -98,47 +109,28 @@ export default function DonatePage() {
         <div className="container">
           <div className="grid two">
             <div className="copy-panel reveal">
-              <p className="eyebrow">Careful donations</p>
-              <h2 className="section-title">The destination matters as much as the donation.</h2>
+              <p className="eyebrow">Donation destinations</p>
+              <h2 className="section-title">The community decides where support goes.</h2>
             </div>
             <div className="copy-panel reveal">
               <p>
-                Not every good cause is the right fit for every campaign.
-                Always Tired holders should work together to find donation
-                destinations that make sense for the mission.
+                Finding the right place to send support matters. Always Tired
+                does not want to rush donations into the first available option
+                just to say something was done.
               </p>
               <p>
-                This may include organizations focused on ME/CFS research, Long
-                COVID overlap, post-infectious disease research, patient
-                advocacy, caregiver support, or education.
+                The goal is to find credible ME/CFS-related organizations,
+                researchers, advocates, education efforts, or support
+                initiatives that align with the mission and can receive funds
+                properly.
               </p>
               <p>
-                The goal is not to rush the money out the door. The goal is to
-                make the donation count.
+                Crypto donations are not always simple, and not every
+                organization can accept them. If you know a credible
+                ME/CFS-related destination that may be a good fit, bring it to
+                the discussion in Discord.
               </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container">
-          <div className="copy-panel reveal">
-            <p className="eyebrow">Donate carefully</p>
-            <h2 className="section-title">Only send funds if you understand what you are doing.</h2>
-            <p>
-              This website does not provide financial advice, tax advice, or
-              medical advice.
-            </p>
-            <p>
-              Always verify the wallet address before sending ETH. Crypto
-              transactions are permanent and cannot be reversed.
-            </p>
-            <p>
-              The donation wallet exists so the community can build support
-              transparently, but each person is responsible for their own
-              decision to donate.
-            </p>
           </div>
         </div>
       </section>
@@ -162,8 +154,51 @@ export default function DonatePage() {
 
       <HolderVote />
 
+      <section className="section">
+        <div className="container">
+          <div className="grid two">
+            <div className="copy-panel reveal">
+              <p className="eyebrow">Donate carefully</p>
+              <h2 className="section-title">Only send funds if you understand what you are doing.</h2>
+            </div>
+            <div className="copy-panel reveal">
+              <ul className="feature-list">
+                {donationNotes.map((note) => (
+                  <li key={note}>{note}</li>
+                ))}
+              </ul>
+              <p>
+                The donation wallet exists so the community can build support
+                transparently, but each person is responsible for their own
+                decision to donate.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <div className="copy-panel reveal">
+            <p className="eyebrow">Other ways to support</p>
+            <h2 className="section-title">Prize support belongs in Discord first.</h2>
+            <p>
+              Direct financial donations should be ETH sent to the public
+              donation wallet. The community may also accept NFT donations,
+              whitelist opportunities, or prize contributions for games,
+              raffles, sweep campaigns, and community events.
+            </p>
+            <p>
+              If you want to support that way, open a ticket in Discord and
+              discuss it with the team. Do not send NFTs or assets without
+              speaking with the team first.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section className="final-cta reveal">
-        <p className="eyebrow">Holder-sourced donation destinations</p>
+        <p className="eyebrow">The Tired Still Remain</p>
         <h2>Help us support the right places.</h2>
         <p className="section-lede">
           Donate if you can. Suggest trusted organizations. Join the discussion.
