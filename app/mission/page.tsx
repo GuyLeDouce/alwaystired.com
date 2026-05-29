@@ -70,37 +70,57 @@ export default function MissionPage() {
               <h2 className="section-title">The Story Behind the Tired</h2>
               <p>
                 Always Tired was never just a collection of exhausted
-                characters. The art was created by Frederik, a hardworking
-                engineer who loved being active. He played sports, ran, and
-                especially loved tennis.
+                characters.
               </p>
               <p>
-                In early 2020, Frederik was diagnosed with ME/CFS. His life
-                changed quickly. Within weeks, he lost his job. Soon after, he
-                lost the energy to play tennis, run, or take part in the sports
-                that had been such a big part of his life.
+                The art came from somewhere real.
               </p>
               <p>
-                Then even going outside became difficult. Then getting out of
-                bed became a task. Frederik eventually received help and was
-                placed somewhere he could get care. During that time, he was put
-                in a wheelchair.
+                It was created by Frederik, a hardworking engineer who loved
+                movement, sport, and being active. He ran. He played sports.
+                Tennis was one of his favourites. He had a life built around
+                energy, discipline, and showing up.
               </p>
               <p>
-                The last update shared from him was that things were still
-                extremely difficult. There was still no clear path to healing,
-                no cure, and no simple treatment for what he was suffering
-                through.
+                Then, in early 2020, Frederik was diagnosed with ME/CFS.
+              </p>
+              <p>His world changed fast.</p>
+              <p>
+                Within weeks, he lost his job. Not long after that, he lost the
+                ability to keep playing tennis, running, or doing the things
+                that had once made him feel like himself. The illness kept
+                taking pieces of ordinary life away from him.
+              </p>
+              <p>First, sports became too much.</p>
+              <p>Then going outside became too much.</p>
+              <p>Then even getting out of bed became a task.</p>
+              <p>
+                Eventually, Frederik was able to get help and was placed
+                somewhere he could receive care. During that time, he was put in
+                a wheelchair. The last update shared from him was that things
+                were still extremely difficult, with no clear path to healing,
+                no cure, and no simple treatment for what he was living through.
               </p>
               <p>
-                That story is the foundation of Always Tired. ME/CFS awareness
-                was never a trend added later. It was always the heart of the
-                project.
+                That is the foundation Always Tired was built on.
               </p>
               <p>
-                The mission was supposed to be awareness, support, and donation.
+                ME/CFS awareness was never a trend added later. It was never
+                just a theme or a marketing angle. It was always at the heart of
+                the project because the exhaustion behind the art was real.
+              </p>
+              <p>
+                The original mission was supposed to be awareness, support, and
+                donation.
+              </p>
+              <p>
                 That mission was not followed through the way it should have
-                been before. Now the SleepyHeads are trying to do it properly.
+                been.
+              </p>
+              <p>
+                Now the SleepyHeads are here to carry it forward properly, with
+                transparency, care, and the community finally helping decide
+                where this goes next.
               </p>
             </div>
 
