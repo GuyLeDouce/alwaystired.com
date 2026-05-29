@@ -57,7 +57,7 @@ export default function Home() {
         <div className="container">
           <div className="section-head reveal">
             <p className="eyebrow">Project story</p>
-            <h2 className="section-title">Always Tired never left.</h2>
+            <h2 className="section-title">Always Tired Never Left</h2>
           </div>
           <div className="grid two">
             <div className="copy-panel reveal">
@@ -72,14 +72,14 @@ export default function Home() {
                 <li>Events continued.</li>
                 <li>$COFFEE raffles continued.</li>
                 <li>NFT donations kept prize pools moving.</li>
-                <li>Mods and active holders kept showing up when there was no promise it would ever matter.</li>
+                <li>Mods and active holders kept showing up when nobody knew if it would ever matter.</li>
               </ul>
             </div>
             <div className="copy-panel reveal">
               <p>
-                Guy LeDouce was one of those holders. He stayed, helped where he
-                could, and kept believing the project still had something worth
-                saving.
+                Guy LeDouce, @GuyLeDouceNFT, was one of those holders. He
+                stayed, helped where he could, and kept believing the project
+                still had something worth saving.
               </p>
               <p>
                 Now the operational keys have finally been released to Guy: the
@@ -119,14 +119,7 @@ export default function Home() {
             </p>
             <p>
               Then even going outside became difficult. Then getting out of bed
-              became a task. Frederik eventually received help and was placed in
-              an institution where he could receive care. During that time, he
-              was put in a wheelchair.
-            </p>
-            <p>
-              The last word shared from him was that things were still extremely
-              difficult. There was still no clear path to healing, no cure, and
-              no simple treatment for what he was suffering through.
+              became a task.
             </p>
             <p>
               That story is the foundation of Always Tired. ME/CFS awareness was
@@ -137,6 +130,11 @@ export default function Home() {
               That mission was not followed through the way it should have been
               before. Now the SleepyHeads are trying to do it properly.
             </p>
+            <div className="actions">
+              <ButtonLink className="primary" href="/mission">
+                Read Frederik&apos;s Story
+              </ButtonLink>
+            </div>
           </div>
         </div>
       </section>
@@ -182,7 +180,8 @@ export default function Home() {
               <p className="fine-print">
                 Always Tired NFTs is a community-led awareness project. We are
                 not a medical organization, and this website does not provide
-                medical advice, diagnosis, or treatment.
+                medical advice, diagnosis, or treatment. Anyone dealing with
+                symptoms should speak with a qualified healthcare professional.
               </p>
             </div>
           </div>
@@ -274,6 +273,37 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="section">
+        <div className="container">
+          <div className="grid two">
+            <div className="copy-panel reveal">
+              <p className="eyebrow">The Coffee Is Still Brewing</p>
+              <h2 className="section-title">$COFFEE is being reviewed carefully.</h2>
+            </div>
+            <div className="copy-panel reveal">
+              <p>$COFFEE has always been part of the SleepyHead experience.</p>
+              <p>
+                It is an off-chain Discord token tied to DRIP, earned through
+                holding, games, poker, and community participation. Until now,
+                it has mostly been used for raffle tickets and monthly NFT prize
+                moments.
+              </p>
+              <p>
+                As part of the community takeover, $COFFEE will be reviewed
+                carefully. Something needs to change. That does not mean forced
+                mechanics, financial promises, or fake value.
+              </p>
+              <p>
+                It means taking time to ask what role $COFFEE should actually
+                play for a community built around awareness, games, collecting,
+                and participation.
+              </p>
+              <p className="statement">No promises yet. The coffee is still brewing.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="final-cta reveal">
         <p className="eyebrow">Still Tired. Still Here.</p>
         <h2>May Be TIRED, But We&apos;re Not ASLEEP.</h2>
@@ -287,7 +317,7 @@ export default function Home() {
           again, and the community gets to help decide what comes next.
         </p>
         <p className="section-lede">
-          This is Web3. Nothing here comes with promised success. We will not
+          This is Web3. Nothing here comes with certain success. We will not
           pretend otherwise.
         </p>
         <p className="statement">

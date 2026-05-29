@@ -23,15 +23,16 @@ export default function CollectionPage() {
     <>
       <section className="page-hero reveal">
         <p className="eyebrow">Explore the Collection</p>
-        <h1>Browse the tired. Find your SleepyHead.</h1>
+        <h1>Explore the Collection</h1>
         <p>
-          Browse the full Always Tired NFT collection, search tokens, explore
-          traits, and reconnect with the tired faces that started it all.
+          Browse all 7,777 Always Tired NFTs: the tired faces, weird traits,
+          dark humour, and exhausted little characters that started this whole
+          thing.
         </p>
         <p>
-          These characters represent exhaustion, chronic illness, fatigue, dark
-          humour, survival, and the strange ability to keep trying even when the
-          body says no.
+          The collection is still the heart of the community. Search tokens,
+          explore traits, open listings, and reconnect with the art that made
+          the SleepyHeads stay.
         </p>
         <div className="actions">
           <ButtonLink external href={siteConfig.links.traitOffers}>

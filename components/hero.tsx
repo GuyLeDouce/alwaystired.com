@@ -11,17 +11,24 @@ export function Hero() {
           <span className="tired">Tired</span>
           <span className="nfts">NFTs</span>
         </div>
-        <p className="eyebrow">Still tired. Still here.</p>
+        <p className="eyebrow">Always Tired NFTs</p>
         <h1>The Tired Still Remain.</h1>
         <p className="lede">
-          Always Tired NFTs never actually left. The old founder stepped away.
-          The public side went stagnant. But the SleepyHeads kept showing up
-          through games, raffles, donations, dark humour, and community.
+          Always Tired never actually left.
         </p>
         <p className="lede">
-          Now the keys are finally in the hands of the people still here. Not a
-          restart. Not fake hype. A community takeover.
+          The original founder stepped away. From the outside, the project
+          looked stagnant. But the SleepyHeads kept showing up through games,
+          raffles, donated prizes, $COFFEE, dark humour, and community.
         </p>
+        <p className="lede">
+          Now the keys are finally in the hands of the people still here.
+        </p>
+        <div className="stack compact-stack">
+          <p className="statement small">Not a relaunch.</p>
+          <p className="statement small">Not a comeback.</p>
+          <p className="statement small">A community takeover.</p>
+        </div>
         <p className="statement">May Be TIRED, But We&apos;re Not ASLEEP.</p>
         <div className="stat-strip inline-stats" aria-label="Project facts">
           <div>
@@ -35,6 +42,10 @@ export function Hero() {
           <div>
             <strong>ME/CFS</strong>
             <span>Awareness</span>
+          </div>
+          <div>
+            <strong>SleepyHead</strong>
+            <span>Stewardship</span>
           </div>
           <div>
             <strong>Public</strong>

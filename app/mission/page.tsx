@@ -67,7 +67,7 @@ export default function MissionPage() {
           </div>
           <div className="stack">
             <div className="copy-panel reveal">
-              <h2 className="section-title">Frederik&apos;s story.</h2>
+              <h2 className="section-title">The Story Behind the Tired</h2>
               <p>
                 Always Tired was never just a collection of exhausted
                 characters. The art was created by Frederik, a hardworking
@@ -83,11 +83,11 @@ export default function MissionPage() {
               <p>
                 Then even going outside became difficult. Then getting out of
                 bed became a task. Frederik eventually received help and was
-                placed in an institution where he could receive care. During
-                that time, he was put in a wheelchair.
+                placed somewhere he could get care. During that time, he was put
+                in a wheelchair.
               </p>
               <p>
-                The last word shared from him was that things were still
+                The last update shared from him was that things were still
                 extremely difficult. There was still no clear path to healing,
                 no cure, and no simple treatment for what he was suffering
                 through.
@@ -96,6 +96,11 @@ export default function MissionPage() {
                 That story is the foundation of Always Tired. ME/CFS awareness
                 was never a trend added later. It was always the heart of the
                 project.
+              </p>
+              <p>
+                The mission was supposed to be awareness, support, and donation.
+                That mission was not followed through the way it should have
+                been before. Now the SleepyHeads are trying to do it properly.
               </p>
             </div>
 
@@ -117,6 +122,23 @@ export default function MissionPage() {
                 For many people, the hardest part is not just the illness
                 itself. It is being doubted, minimized, or told they are
                 &quot;just tired.&quot;
+              </p>
+              <p>
+                Always Tired NFTs cannot treat ME/CFS. A website cannot cure
+                anyone. A community cannot replace doctors, research, or care.
+                But a community can help keep the conversation visible.
+              </p>
+              <p>
+                We can share credible resources. We can support awareness. We
+                can raise funds transparently. We can help more people
+                understand that this illness is real, serious, and too often
+                dismissed.
+              </p>
+              <p className="fine-print">
+                Always Tired NFTs is a community-led awareness project. We are
+                not a medical organization, and this website does not provide
+                medical advice, diagnosis, or treatment. Anyone dealing with
+                symptoms should speak with a qualified healthcare professional.
               </p>
             </div>
 

@@ -121,9 +121,13 @@ export function DonationTracker({ compact = false }: { compact?: boolean }) {
           <div className="status-line">
             {status === "loading" && "Updating wallet balance..."}
             {status === "ready" &&
+              data.source === "partial" &&
+              "Live price data is temporarily unavailable. The public wallet is still visible and can be verified on Etherscan."}
+            {status === "ready" &&
+              data.source !== "partial" &&
               `Updated ${new Date(data.lastUpdated).toLocaleString()}`}
             {status === "error" &&
-              "Live balance is temporarily unavailable. Showing safe fallback values."}
+              "Live wallet balance is temporarily unavailable. The public wallet is still visible and can be verified on Etherscan."}
           </div>
           <h3>Goal: {currency(data.goalUsd)} USD in ETH</h3>
           <div className="progress-shell" aria-label="Donation progress">
@@ -136,12 +140,18 @@ export function DonationTracker({ compact = false }: { compact?: boolean }) {
             <div className="donation-stat">
               <span>Raised so far</span>
               <strong>
-                {currency(data.usdValue)} / {currency(data.goalUsd)}
+                {data.ethUsdPrice > 0
+                  ? `${currency(data.usdValue)} / ${currency(data.goalUsd)}`
+                  : "USD temporarily unavailable"}
               </strong>
             </div>
             <div className="donation-stat">
               <span>Progress</span>
-              <strong>{data.percentComplete.toFixed(1)}%</strong>
+              <strong>
+                {data.ethUsdPrice > 0
+                  ? `${data.percentComplete.toFixed(1)}%`
+                  : "Waiting for price"}
+              </strong>
             </div>
             <div className="donation-stat">
               <span>ETH balance</span>
@@ -149,14 +159,18 @@ export function DonationTracker({ compact = false }: { compact?: boolean }) {
             </div>
             <div className="donation-stat">
               <span>Remaining</span>
-              <strong>{currency(data.remainingUsd)}</strong>
+              <strong>
+                {data.ethUsdPrice > 0
+                  ? currency(data.remainingUsd)
+                  : "USD temporarily unavailable"}
+              </strong>
             </div>
           </div>
           <p className="fine-print">
             ETH/USD value is approximate and changes with market price.
             {data.ethUsdPrice > 0
               ? ` Current estimate: ${currency(data.ethUsdPrice)} per ETH.`
-              : " Price data could not be loaded right now."}
+              : " Live price data is temporarily unavailable. The wallet can still be verified on Etherscan."}
           </p>
           <div className="wallet-row">
             <code title={data.walletAddress}>{data.walletAddress}</code>

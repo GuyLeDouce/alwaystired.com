@@ -10,8 +10,8 @@ export const metadata = {
 
 const nextSteps = [
   {
-    title: "Website Polish",
-    body: "Keep improving the website as the home base for the collection, ME/CFS resources, donation tracking, project links, and community information.",
+    title: "Website Stewardship",
+    body: "Keep improving the website as the home base for the collection, ME/CFS resources, donation tracking, verified links, and community direction.",
   },
   {
     title: "Collection Viewer",
@@ -82,14 +82,15 @@ export default function PlansPage() {
     <>
       <section className="page-hero reveal">
         <p className="eyebrow">Visible next steps</p>
-        <h1>What we&apos;re working on.</h1>
+        <h1>Where We Go From Here</h1>
+        <p className="statement">Visible steps, not empty promises.</p>
         <p>
-          This is not a list of hype promises. It is a visible look at what the
-          SleepyHeads are improving, discussing, and building toward.
+          This is a visible list of what the SleepyHeads are improving,
+          discussing, and building toward.
         </p>
         <p>
-          No fake deadlines. No pretending Web3 is easy. Just the work in front
-          of us.
+          No guarantees. No fake deadlines. No pretending Web3 is easy. Just the
+          work in front of us.
         </p>
       </section>
 

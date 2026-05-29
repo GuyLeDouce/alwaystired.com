@@ -9,7 +9,7 @@ export type DonationBalance = {
   remainingUsd: number;
   walletAddress: string;
   lastUpdated: string;
-  source: "live" | "fallback";
+  source: "live" | "partial" | "fallback";
 };
 
 const fallbackRpcUrl = "https://ethereum.publicnode.com";
@@ -79,10 +79,24 @@ export async function getDonationBalance(): Promise<DonationBalance> {
   const goalUsd = siteConfig.donation.donationGoalUsd;
 
   try {
-    const [ethBalance, ethUsdPrice] = await Promise.all([
-      getEthBalance(walletAddress),
-      getEthUsdPrice(),
-    ]);
+    const ethBalance = await getEthBalance(walletAddress);
+    let ethUsdPrice = 0;
+    try {
+      ethUsdPrice = await getEthUsdPrice();
+    } catch {
+      return {
+        ethBalance,
+        ethUsdPrice,
+        usdValue: 0,
+        goalUsd,
+        percentComplete: 0,
+        remainingUsd: goalUsd,
+        walletAddress,
+        lastUpdated: new Date().toISOString(),
+        source: "partial",
+      };
+    }
+
     const usdValue = ethBalance * ethUsdPrice;
     const percentComplete = Math.min((usdValue / goalUsd) * 100, 100);
 

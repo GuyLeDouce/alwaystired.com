@@ -21,28 +21,28 @@ const communityActions = [
 
 const holderActions = [
   {
-    title: "Learn",
-    body: "Read and share credible ME/CFS information before speaking for the mission.",
+    title: "Holder Voice",
+    body: "Always Tired holders will help guide official community decisions, including future donation votes and major direction choices.",
   },
   {
-    title: "Share",
-    body: "Help keep awareness visible across social platforms and communities.",
+    title: "Open Discussion",
+    body: "Non-holders can still join the conversation, suggest donation destinations, share resources, and support the mission.",
   },
   {
-    title: "Support",
-    body: "Suggest credible donation destinations, resources, or awareness opportunities.",
+    title: "Games & $COFFEE",
+    body: "The SleepyHeads kept the project alive through Discord games, ClubGG poker, $COFFEE raffles, donated NFTs, and community events.",
   },
   {
-    title: "Play",
-    body: "Join community games, raffles, and events that keep the SleepyHeads active.",
+    title: "Awareness Ambassadors",
+    body: "Holders can help share credible ME/CFS resources, create awareness content, and keep the illness visible without speaking over patients or experts.",
   },
   {
-    title: "Vote",
-    body: "Holders will help decide where donation funds go once the holder system is ready.",
+    title: "Community Stewardship",
+    body: "Guy holds the operational keys, but the project direction belongs to the SleepyHeads.",
   },
   {
-    title: "Stay",
-    body: "Keep showing up, even when things move slowly.",
+    title: "Other Ways to Support",
+    body: "NFT donations, whitelist opportunities, and prize contributions may be used for games, raffles, sweep campaigns, and community events. Open a Discord ticket and discuss it with the team first.",
   },
 ];
 
@@ -120,8 +120,15 @@ export default function CommunityPage() {
             <p className="eyebrow">What SleepyHeads can do</p>
             <h2 className="section-title">Not passive holders. Active stewards.</h2>
             <p className="section-lede">
-              Community-led does not mean chaos. It means visible discussion,
-              shared responsibility, and decisions that holders can understand.
+              They stayed when the public side went stagnant. They played the
+              games. They donated prizes. They joined raffles. They kept
+              $COFFEE moving. They shared the art. They refused to let the
+              project disappear.
+            </p>
+            <p className="section-lede">
+              Now that the keys are finally in community hands, the SleepyHeads
+              are not just watching what happens next. They are helping decide
+              it.
             </p>
           </div>
           <div className="grid three">

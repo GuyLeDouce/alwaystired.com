@@ -72,14 +72,25 @@ export default function DonatePage() {
         <h1>A public wallet. A visible goal. A holder-led decision.</h1>
         <p>
           The Always Tired community fund is designed to be simple and
-          transparent. The goal is not just to raise funds. The goal is to raise
-          funds carefully.
+          transparent.
+        </p>
+        <p>
+          ETH donations go directly to the public Ethereum wallet below. The
+          website tracks the approximate USD value of ETH in that wallet against
+          the first visible community goal.
         </p>
         <p>
           The current goal is $5,000 USD worth of ETH. This is a starting point
           chosen to give the community something clear to work toward. Future
           goals, donation cycles, and distribution plans may change through
           holder discussion.
+        </p>
+        <p>
+          Once a goal is reached, SleepyHeads will help nominate and review
+          possible ME/CFS-related donation destinations. Non-holders are welcome
+          to suggest ideas and join the discussion. Holders will make the
+          official decision through a future holder-only voting system on the
+          website. After funds are sent, proof will be shared publicly.
         </p>
       </section>
 
@@ -101,6 +112,36 @@ export default function DonatePage() {
                 <p>{card.body}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <div className="grid two">
+            <div className="copy-panel reveal">
+              <p className="eyebrow">Royalties and transparency</p>
+              <h2 className="section-title">Activity can support the public wallet when royalties are honoured.</h2>
+            </div>
+            <div className="copy-panel reveal">
+              <p>
+                For a long time, Always Tired stayed alive mostly through the
+                people who refused to leave. The community kept playing,
+                donating prizes, running raffles, and showing up, but the
+                collection was not being pushed publicly because royalties were
+                not flowing where they should have.
+              </p>
+              <p>
+                Now that the keys have been released and royalties can point
+                toward the public donation wallet, activity around the
+                collection can finally support the mission transparently.
+              </p>
+              <p>
+                Depending on how a sale is listed and whether royalties are
+                honoured by the marketplace, up to 10% can flow directly to the
+                public donation wallet.
+              </p>
+            </div>
           </div>
         </div>
       </section>
